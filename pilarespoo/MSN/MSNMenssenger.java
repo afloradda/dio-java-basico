@@ -4,7 +4,7 @@ public class MSNMenssenger {
 
     public void enviarMensagem(){
         validarConectadoInternet();
-        System.out.println("Enviando mensagem pelo MSN Messenger");
+        System.out.println("ENVIANDO MENSAGEM: pelo MSN Messenger");
         salvarHistoricoMensagem();
     }
     public void receberMensagem(){

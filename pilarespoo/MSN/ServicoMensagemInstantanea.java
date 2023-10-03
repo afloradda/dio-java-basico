@@ -1,20 +1,19 @@
 package pilarespoo.MSN;
 
-public class ServicoMensagemInstantanea {
+public abstract class ServicoMensagemInstantanea{
 
-    public void enviarMensagem(){
-        validarConectadoInternet();
-        System.out.println("Enviando mensagem");
-        salvarHistoricoMensagem();
-    }
-    public void receberMensagem(){
-        System.out.println("Mensagem recebida");
-    }
+    public abstract void enviarMensagem();
+    public abstract void receberMensagem();
 
-    private void validarConectadoInternet(){
-        System.out.println("Conectando..");
-    }
-    private void salvarHistoricoMensagem(){
-        System.out.println("Salvo no histórico..");
-    }
+    /*
+     * A Abstração parte do conceito de como cada
+     * herdeiro da classe vai interpretar para o seu proprio
+     * programa.
+     */
 }
+
+/*
+ * tornando o 'ServicoMensagemInstantanea' uma classe abstrata
+ * determinamos que todos os filhos que herdarem devem ter os seguintes métodos
+ * e implimentarem suas diferentes formas de execução
+ */
