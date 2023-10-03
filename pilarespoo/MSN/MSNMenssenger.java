@@ -1,6 +1,6 @@
 package pilarespoo.MSN;
 
-public class MSNMenssenger {
+public class MSNMenssenger extends ServicoMensagemInstantanea{
 
     public void enviarMensagem(){
         validarConectadoInternet();

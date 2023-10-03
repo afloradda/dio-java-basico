@@ -2,14 +2,18 @@ package pilarespoo.MSN;
 
 public class ComputadorTeste {
     public static void main(String[] args) {
-        System.out.println("MSN");
-        MSNMenssenger msn = new MSNMenssenger();
-         msn.enviarMensagem();
-         msn.receberMensagem();
-        System.out.println(" ");
-        System.out.println("FACEBOOK");
-        FacebookMessenger fcb = new FacebookMessenger();
-         fcb.enviarMensagem();
-         fcb.receberMensagem();
+        ServicoMensagemInstantanea smi = null;
+
+        String appEscolhido = "msn";
+
+        if(appEscolhido.equals("msn"))
+            smi = new MSNMenssenger();
+        else if(appEscolhido.equals("fbm"))
+            smi = new FacebookMessenger();
+        else if (appEscolhido.equals("tlg"))
+            smi = new TelegramMessenger();        
+
+        smi.enviarMensagem();
+        smi.receberMensagem();
     }
 }
