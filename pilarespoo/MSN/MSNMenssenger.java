@@ -4,11 +4,11 @@ public class MSNMenssenger {
 
     public void enviarMensagem(){
         validarConectadoInternet();
-        System.out.println("ENVIANDO MENSAGEM");
+        System.out.println("Enviando mensagem pelo MSN Messenger");
         salvarHistoricoMensagem();
     }
     public void receberMensagem(){
-        System.out.println("NOVA MENSAGEM");
+        System.out.println("NOVA MENSAGEM: pelo MSN Messenger");
     }
 
     // inicialmente tinhamos esses métodos como public
